@@ -1,6 +1,6 @@
 # RappiPlus: Revenue, Retention & Conversion Analysis
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DebbieJara/rappiplus-revenue-retention-analysis/blob/main/notebook/RappiPlus_Analisis.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DebbieJara/rappiplus-revenue-retention-analysis/blob/main/RappiPlus_Analisis.ipynb)
 ![Python](https://img.shields.io/badge/Python-pandas%20%7C%20numpy%20%7C%20statsmodels-3776AB?logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-DAX-F2C811?logo=powerbi&logoColor=black)
@@ -62,8 +62,7 @@ Raw and clean datasets, plus the exported SQL tables, are available here: [Googl
 ```
 rappiplus-revenue-retention-analysis/
 ├── README.md
-├── notebook/
-│   └── RappiPlus_Analisis.ipynb
+├── RappiPlus_Analisis.ipynb
 └── dashboard/
     ├── dashboard_resumen_ejecutivo.png
     ├── dashboard_analisis_detallado.png

@@ -4,7 +4,6 @@
 ![Python](https://img.shields.io/badge/Python-pandas%20%7C%20numpy%20%7C%20statsmodels-3776AB?logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-DAX-F2C811?logo=powerbi&logoColor=black)
-![Status](https://img.shields.io/badge/status-complete-brightgreen)
 
 ## The Business Problem
 

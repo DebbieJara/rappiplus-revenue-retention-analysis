@@ -16,7 +16,7 @@ Using order, catalog, and marketing data, I built a profitability model from scr
 ## What the Data Revealed
 
 - The business is profitable overall: $9.62M revenue and $2.92M net profit (~30% margin).
-- Two products, Jacket-Winter-M and Laptop-Gaming-16GB, operate at a loss (-$57,235 and -$417,351) despite being among the top sellers by volume, a cost structure problem, not a demand problem.
+- Two products, Jacket-Winter-M and Laptop-Gaming-16GB, operate at a loss (-$57,235 and -$417,351): Jacket-Winter-M is a top-4 seller by volume, while Laptop-Gaming-16GB sells at a mid-tier volume, a cost structure problem, not a demand problem.
 - The checkout funnel loses the vast majority of users before purchase, with the sharpest drop (89.13%) occurring between entering payment info and completing the purchase.
 - The proposed checkout redesign showed no statistically significant lift in conversion (p = 0.416), not enough evidence to justify shipping it.
 - 45 orders (0.12% of volume) couldn't be matched to a catalog product, pointing to a data capture issue upstream.
@@ -27,7 +27,7 @@ The insight wasn't just "the business is profitable." It was: payment friction a
 
 ### Dataset
 
-The data comes from the TripleTen (Practicum) bootcamp environment. It is fictitious, generated for educational purposes, and does not represent a real business. Two sources were used:
+The data comes from the TripleTen (Practicum) bootcamp environment and is not included in this repository. Sources used:
 
 | Source | Tables/Files |
 |---|---|
@@ -58,3 +58,37 @@ Raw and clean datasets, plus the exported SQL tables, are available here: [Googl
 | Dashboard | Power BI | DAX measures, conditional formatting, drill-through, button navigation |
 
 ### Files
+
+```
+rappiplus-revenue-retention-analysis/
+├── README.md
+├── notebook/
+│   └── RappiPlus_Analisis.ipynb
+└── dashboard/
+    ├── dashboard_resumen_ejecutivo.png
+    ├── dashboard_analisis_detallado.png
+    └── dashboard_detalle_producto.png
+```
+
+Raw and clean CSVs, plus the exported SQL tables, are not included in this repository due to size; they're available in the [Google Drive folder](https://drive.google.com/drive/folders/1E6tyQ_wmgoAgn7QDM-e2uzmKT-6JRm_J?usp=drive_link) linked above. SQL queries for the funnel and cohort steps require credentials for the bootcamp's private training database and are not independently runnable outside that environment.
+
+## Dashboard
+
+The full interactive dashboard (with drill-through and filters) is available as a downloadable `.pbix` file, along with the clean CSVs:
+
+🔗 [Download dashboard (.pbix) and clean CSVs](https://drive.google.com/file/d/1iVvas_At1xCuqTi11TJoM9vpaUSZEGI9/view?usp=sharing)
+
+**Executive Summary**
+![Executive Summary](dashboard/dashboard_resumen_ejecutivo.png)
+
+**Detailed Analysis**
+![Detailed Analysis](dashboard/dashboard_analisis_detallado.png)
+
+**Product Detail (drill-through)**
+![Product Detail](dashboard/dashboard_detalle_producto.png)
+
+---
+
+By Deborah Jara | People & Learning Analytics · Business Intelligence | Mexico
+
+[LinkedIn](https://linkedin.com/in/deborahjara) · [GitHub](https://github.com/DebbieJara)

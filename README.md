@@ -1,8 +1,8 @@
 # RappiPlus: Revenue, Retention & Conversion Analysis
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DebbieJara/rappiplus-revenue-retention-analysis/blob/main/RappiPlus_Analisis.ipynb)
-![Python](https://img.shields.io/badge/Python-pandas%20%7C%20numpy%20%7C%20statsmodels-3776AB?logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Python](https://img.shields.io/badge/Python-pandas%20%7C%20numpy%20%7C%20matplotlib%20%7C%20seaborn%20%7C%20statsmodels-3776AB?logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-DuckDB-FFF000?logo=duckdb&logoColor=black)
 ![Power BI](https://img.shields.io/badge/Power%20BI-DAX-F2C811?logo=powerbi&logoColor=black)
 
 ## The Business Problem
@@ -27,14 +27,12 @@ The insight wasn't just "the business is profitable." It was: payment friction a
 
 ### Dataset
 
-The data comes from the TripleTen (Practicum) bootcamp environment and is not included in this repository. Sources used:
+The order, catalog, marketing, and experiment datasets are sourced from cloud storage and are not included in this repository. Sources used:
 
 | Source | Tables/Files |
 |---|---|
 | CSV (cloud storage) | orders, catalog, marketing, experiment_checkout_ui |
-| PostgreSQL (training database) | events, users, user_activity |
-
-Raw and clean datasets, plus the exported SQL tables, are available here: [Google Drive folder](https://drive.google.com/drive/folders/1E6tyQ_wmgoAgn7QDM-e2uzmKT-6JRm_J?usp=drive_link)
+| CSV (included in `/data/`) | events, users, user_activity |
 
 ### Analytical Workflow
 
@@ -54,22 +52,26 @@ Raw and clean datasets, plus the exported SQL tables, are available here: [Googl
 | Cleaning & EDA | Python | pandas, numpy |
 | Exploratory visualization | Python | matplotlib, seaborn |
 | Statistical test | Python | statsmodels (two-proportion z-test) |
-| Funnel & cohorts | SQL (PostgreSQL) | CTEs, JOINs, CASE WHEN, date functions |
+| Funnel & cohorts | SQL (DuckDB) | CTEs, JOINs, CASE WHEN, date functions |
 | Dashboard | Power BI | DAX measures, conditional formatting, drill-through, button navigation |
 
 ### Files
 
 ```
 rappiplus-revenue-retention-analysis/
-├── README.md
-├── RappiPlus_Analisis.ipynb
-└── dashboard/
-    ├── dashboard_resumen_ejecutivo.png
-    ├── dashboard_analisis_detallado.png
-    └── dashboard_detalle_producto.png
+  ├── README.md
+  ├── RappiPlus_Analisis.ipynb
+  ├── data/
+  │   ├── events.csv
+  │   ├── users.csv
+  │   └── user_activity.csv
+  └── dashboard/
+      ├── dashboard_resumen_ejecutivo.png
+      ├── dashboard_analisis_detallado.png
+      └── dashboard_detalle_producto.png
 ```
 
-Raw and clean CSVs, plus the exported SQL tables, are not included in this repository due to size; they're available in the [Google Drive folder](https://drive.google.com/drive/folders/1E6tyQ_wmgoAgn7QDM-e2uzmKT-6JRm_J?usp=drive_link) linked above. SQL queries for the funnel and cohort steps require credentials for the bootcamp's private training database and are not independently runnable outside that environment.
+Raw CSVs for orders, catalog, marketing, and experiment_checkout_ui are loaded directly from cloud storage within the notebook and are not stored in this repository. The exported SQL tables (events, users, user_activity) are included directly in `/data/`. Clean/processed versions of all datasets, plus the full `.pbix` dashboard file, are available in the [Google Drive folder](https://drive.google.com/drive/folders/1E6tyQ_wmgoAgn7QDM-e2uzmKT-6JRm_J?usp=drive_link) for reference.
 
 ## Dashboard
 
